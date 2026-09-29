@@ -1,0 +1,28 @@
+THE BEACON OF BRIARHOLD
+
+Double-click "Play Briarhold.html" to play in Chrome, Edge, or Firefox.
+That file contains the entire game. No installation, server, account, or
+internet connection is needed. The browser must support WebGL 2.
+
+WASD / Arrow keys: move relative to the screen
+Space: swing your sword (nearby enemies help guide your aim)
+Shift: dodge; briefly avoids damage
+E: open a nearby chest or relight the final beacon
+P / Escape: pause or resume
+
+Recover the three Dawn Sigils shown as gold dots on the map. Defeat each
+sigil's nearby guardians to collect it. The castle gate opens after all three.
+Defeat the Hollow Warden in the courtyard, then press E at the crystal in
+front of the great hall. Dodge when the Warden's attack ring appears.
+
+Hearts restore two health. Green bottles give a temporary speed boost.
+Chests contain coins and healing. Sigils also restore one health.
+
+Source files are included for learning and editing:
+index.html - page structure
+style.css - interface styling
+renderer.js - original native WebGL renderer, meshes, lighting, shadows
+game.js - original world art, controls, combat, objectives, and game rules
+
+All graphics and sounds were created in code for this game. No third-party
+libraries or external game assets are used.

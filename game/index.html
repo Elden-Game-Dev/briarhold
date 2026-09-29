@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Beacon of Briarhold</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="view" aria-label="The 3D world of Briarhold"></canvas>
+<div id="loading">Building Briarhold…</div>
+<div id="hud" hidden>
+  <div class="top-left"><div class="wordmark">BRIARHOLD <span>✦</span></div><div class="vitals"><span id="health"></span><span id="coins">0 <small>COINS</small></span><span id="kills">0 <small>DEFEATED</small></span></div><div id="boost"></div></div>
+  <div class="quest"><span class="eyebrow">YOUR JOURNEY</span><strong id="objective"></strong><div id="sigils"><span>◇</span><span>◇</span><span>◇</span></div></div>
+  <div id="region"></div><canvas id="map" width="148" height="148" aria-label="World map"></canvas>
+  <div class="controls-bar"><b>WASD / ARROWS</b> Move <i>·</i> <b>SPACE</b> Sword <i>·</i> <b>SHIFT</b> Dodge <i>·</i> <b>E</b> Interact <i>·</i> <b>P</b> Pause</div>
+  <div id="boss" hidden><span>THE HOLLOW WARDEN</span><div><i id="bossFill"></i></div></div>
+</div>
+<div id="toast" role="status"></div><div id="prompt"></div><div id="damage"></div>
+<div class="corner-buttons"><button id="sound" aria-label="Toggle sound">♪ SOUND ON</button><button id="pauseButton" hidden>Ⅱ PAUSE</button></div>
+<section id="overlay"><div class="intro"><div class="ornament">✦</div><p id="eyebrow" class="eyebrow">A STORYBOOK ADVENTURE</p><h1 id="title">The Beacon<br><em>of Briarhold</em></h1><p id="description">Beyond the old river stands a sleeping castle.<br>Find three Dawn Sigils. Lift your sword.<br>Bring its light back to the valley.</p><div id="stats" hidden></div><button id="start" class="primary">BEGIN YOUR JOURNEY <span>→</span></button><p id="introControls">WASD / Arrows to move · Space to swing your sword<br>Shift to dodge · E to interact · P to pause</p><p class="footnote">An original world. Yours to explore.</p></div></section>
+<script src="renderer.js"></script><script src="game.js"></script>
+</body></html>
