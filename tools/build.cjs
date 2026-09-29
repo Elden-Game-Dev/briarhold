@@ -14,6 +14,7 @@ const write = (name, data) => fs.writeFileSync(path.join(out, name), data);
 const description = 'Explore a colourful 3D storybook valley, wield your sword, recover three Dawn Sigils and awaken a sleeping castle. Play The Beacon of Briarhold free in your browser.';
 const schema = { '@context': 'https://schema.org', '@type': 'VideoGame', name: 'The Beacon of Briarhold', url: base, description, image: base + 'share.png', genre: ['Adventure', 'Action'], playMode: 'SinglePlayer', gamePlatform: 'Web browser', operatingSystem: 'Any desktop OS with a WebGL 2 browser', applicationCategory: 'Game', inLanguage: 'en', isAccessibleForFree: true };
 const metadata = `
+<meta name="google-site-verification" content="G0c_miltWJTqBtnTOzZiFGXgIOxALAMu8-KrGwl8kk4">
 <meta name="description" content="${description}">
 <meta name="theme-color" content="#183b40">
 <link rel="canonical" href="${escape(base)}">
