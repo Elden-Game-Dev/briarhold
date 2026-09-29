@@ -3,8 +3,12 @@
 A free, single-player 3D browser adventure. Explore a storybook valley, recover
 three Dawn Sigils, defeat the Hollow Warden and restore the castle beacon.
 
-**Publication status:** prepared locally; GitHub account setup and first deployment pending.
-The confirmed public URL will be added here after deployment has been tested.
+**Play:** https://elden-game-dev.github.io/briarhold/
+
+**Repository:** https://github.com/Elden-Game-Dev/briarhold
+
+Version **v1.0.0** was deployed and checked in a browser on 29 September 2026.
+See [RELEASES.md](RELEASES.md) for the verified deployed commit and rollback point.
 
 ## Play locally
 

@@ -3,3 +3,4 @@ itch-build/
 *.zip
 .DS_Store
 Thumbs.db
+media/*-check.png

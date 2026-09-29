@@ -33,7 +33,7 @@ Warden and relight the beacon.
 **Requirements:** Desktop or laptop, keyboard and a WebGL 2 browser. No touch or
 gamepad controls in this version. Progress is not saved between sessions.
 
-Main website: [insert the verified GitHub Pages URL after first deployment].
+Main website: https://elden-game-dev.github.io/briarhold/
 
 ## Listing settings
 

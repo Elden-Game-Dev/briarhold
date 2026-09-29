@@ -8,6 +8,21 @@ GitHub Pages publication is authorized. itch.io public publication requires
 separate approval of the final listing. Never overwrite the original development
 files as part of publication.
 
+## Current setup
+
+Repository: https://github.com/Elden-Game-Dev/briarhold
+Live game: https://elden-game-dev.github.io/briarhold/
+First verified rollback tag: `v1.0.0`. See RELEASES.md.
+
+Initial uploads and commits used GitHub's signed-in browser interface, which
+remains a supported option for future releases. Local Git fetches do not grant
+push access. Do not extract browser credentials; if command-line publication is
+wanted later, use a normal owner-approved GitHub authentication flow.
+
+For this computer's bundled Git, fetching required GIT_EXEC_PATH pointing to
+the installed Git `mingw64/bin` folder and `git -c http.sslBackend=openssl fetch`.
+TLS certificate verification remains enabled. No global Git settings were changed.
+
 ## First setup (assistant performs the technical work)
 
 1. Obtain normal authenticated GitHub access; the owner handles sign-in and 2FA.
