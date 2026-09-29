@@ -1,0 +1,38 @@
+name: Publish approved Briarhold version
+
+# Intentionally no push, pull_request, or scheduled deployment triggers.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: briarhold-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: Build the approved static site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}/
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: node tools/build.cjs
+      - name: Check release files
+        run: node tools/check.cjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deployment
