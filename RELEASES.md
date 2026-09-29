@@ -16,4 +16,13 @@
   core mechanics and a complete victory route.
 
 Documentation-only commits after this version do not change the live game.
-Google Search Console verification and itch.io account setup are still pending.
+## Google verification update — 29 September 2026
+
+- Deployed commit: `a621ea9028d1934623eea18d897f54ccc60c79b4`
+- Deployment: https://github.com/Elden-Game-Dev/briarhold/actions/runs/36543303180
+- Added only the Google ownership meta tag to the site build; gameplay and graphics
+  are unchanged. Public assets match the verified local build.
+- Google ownership verified; main-page indexing request accepted; sitemap submitted. Initial fetch status requires
+  follow-up (see DISCOVERABILITY.md). itch.io account setup remains pending.
+- The v1.0.0 tag remains the original gameplay rollback point. When rolling back
+  game files, preserve the verification tag to keep Search Console ownership.

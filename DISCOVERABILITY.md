@@ -7,7 +7,21 @@ About & Controls page; sitemap containing the game and About page. No keyword
 stuffing, invented ratings, analytics or third-party tracking scripts.
 
 The current share image is a real 1280×720 screenshot of the game's title scene.
-No Google indexing submission has been made yet; the public site must exist first.
+Google ownership was verified by HTML meta tag on 29 September 2026 for the exact
+URL-prefix property `https://elden-game-dev.github.io/briarhold/`. Keep the
+`google-site-verification` tag in tools/build.cjs on all future releases.
+
+The sitemap was submitted successfully. Its initial Google status was "Couldn't
+fetch", despite the public sitemap returning HTTP 200 with valid XML. Indexing
+request for the main game URL was accepted: Google confirmed "Indexing requested"
+and that the URL was added to its priority crawl queue. This is not confirmation
+that the page is indexed yet. The sitemap was resubmitted once using its full URL;
+the report still showed "Couldn't fetch" immediately afterward. Check the report
+again during the next setup session rather than repeatedly resubmitting.
+
+Public checks confirmed HTTP 200, application/xml, correct absolute page URLs,
+and no robots blocking directive (the origin robots.txt returns 404). Google
+successfully fetched the ownership tag and accepted the live-page indexing test.
 
 ## Once the real URL is live
 
